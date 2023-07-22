@@ -1,13 +1,44 @@
+html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Add your preferred styles for the grid container here */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px;
 }
+
+/* Add any additional styles for the card links if needed */
+.card-link {
+  text-decoration: none;
+}
+
+/* Style for the card */
+.card {
+  background-color: teal;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for the card */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Add other hover effects if desired */
+}
+
+/* Add any other styles for the card content (e.g., title, image, etc.) */
+.card h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
